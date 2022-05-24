@@ -9,7 +9,6 @@
       <div class="container">
         <a href="index.html" class="page-header-logo">
           <img src="" alt="Логотип магазина Device">
-          <h1 class="visually-hidden">Магазин Device</h1>
         </a>
         <nav class="page-nav nav-user">
           <ul class="nav-user-list">
@@ -97,17 +96,8 @@
                       <div class="scale">
                         <div class="bar"></div>
                       </div>
-                      <div class="toggle toggle-min" tabindex="0" aria-label="Цена от"></div>
-                      <div class="toggle toggle-max" tabindex="0" aria-label="Цена до"></div>
-                    </div>
-                    <div class="price-controls">
-                      <label class="min-price">
-                        <input type="number" name="min-price" value="0" aria-label="Цена от">
-                      </label>
-                      <div class="separator">-</div>
-                      <label class="max-price">
-                        <input type="number" name="max-price" value="5000" aria-label="Цена до">
-                      </label>
+                      <div class="toggle toggle-min" tabindex="0">Цена от</div>
+                      <div class="toggle toggle-max" tabindex="0">Цена до</div>
                     </div>
                   </div>
                 </div>
@@ -149,9 +139,104 @@
                     </li>
                   </ul>
                 </div>
-                <button type="submit" class="button">Показать</button>
+                <button type="submit" name="filter-show" class="button">Показать</button>
               </form>
             </aside>
+            <div class="content">
+              <div class="sort">
+                <h2>Сортировка:</h2>
+                <div class="sort-by">
+                  <form action="https://echo.htmlacademy.ru/" method="get" class="sort-filter">
+                    <select name="sort-by" id="sort-by" class="sort-by">
+                      <option value="popular">Популярные</option>
+                      <option value="price">По цене</option>
+                    </select>
+                    <div class="sort-direction">
+                      <input type="radio" name="sort-direction" value="up" id="sort-up" class="visually-hidden" checked>
+                      <label class="direction" for="sort-up" tabindex="0" aria-label="По возрастанию"></label>
+                      <input type="radio" name="sort-direction" value="down" id="sort-down" class="visually-hidden">
+                      <label class="direction" for="sort-down" tabindex="0" aria-label="По убыванию"></label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog-products">
+                <ul class="products-list">
+                  <li>
+                    <a href="#">
+                      <img src="" alt="Любительская селфи-палка">
+                      <div class="product-description">
+                        <div class="product-title">
+                          Любительская селфи-палка
+                        </div>
+                        <div class="product-price">
+                          500 ₽
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="Профессиональная селфи-палка ">
+                      <div class="product-description">
+                        <div class="product-title">
+                          Профессиональная селфи-палка
+                        </div>
+                        <div class="product-price">
+                          1500 ₽
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="Непотопляемая селфи-палка">
+                      <div class="product-description">
+                        <div class="product-title">
+                          Непотопляемая селфи-палка
+                        </div>
+                        <div class="product-price">
+                          2500 ₽
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="Селфи-палка Следуй за мной">
+                      <div class="product-description">
+                        <div class="product-title">
+                          Селфи-палка «Следуй за мной»
+                        </div>
+                        <div class="product-price">
+                          1500 ₽
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="product-load-more">Загрузить еще</button>
+              <div class="pagination">
+                <a href="#" class="pagination-direction pagination-back">Назад</a>
+                <ul>
+                  <li>
+                    <a href="#" class="current">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>...</li>
+                  <li>
+                    <a href="#">15</a>
+                  </li>
+                </ul>
+                <a href="#" class="pagination-direction pagination-forward">Вперёд</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
