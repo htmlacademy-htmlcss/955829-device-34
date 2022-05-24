@@ -6,130 +6,198 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header-logo">
-        <img src="" alt="Логотип магазина Device">
-        <h1 class="visually-hidden">Магазин Device</h1>
-      </div>
-      <nav class="page-nav nav-user">
-        <ul class="nav-user-list">
-          <li>
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <input type="search" name="search" placeholder="Текст поиска">
-              <input type="submit" name="submit-search" value="Найти">
-            </form>
-          </li>
-          <li>
-            <a href="#" class="user-login">Войти</a>
-          </li>
-          <li>
-            <a href="#" class="user-logout visually-hidden">Выйти</a>
-          </li>
-          <li>
-            <a href="#" class="user-compare">Сравнить</a>
-          </li>
-          <li>
-            <a href="#" class="user-cart">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="page-nav nav-main">
-        <div class="nav-main-item">
-          <a href="catalog.html" class="nav-main-catalog-link">Каталог товаров</a>
-          <ul class="nav-main--category">
+      <div class="container">
+        <div class="page-header-logo">
+          <img src="" alt="Логотип магазина Device">
+          <h1 class="visually-hidden">Магазин Device</h1>
+        </div>
+        <nav class="page-nav nav-user">
+          <ul class="nav-user-list">
             <li>
-              <a href="#">Виртуальная реальность</a>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <input type="search" name="search" placeholder="Текст поиска">
+                <input type="submit" name="submit-search" value="Найти">
+              </form>
             </li>
             <li>
-              <a href="#">Моноподы для селфи</a>
+              <a href="#" class="user-login">Войти</a>
             </li>
             <li>
-              <a href="#">Экшн-камеры</a>
+              <a href="#" class="user-logout visually-hidden">Выйти</a>
             </li>
             <li>
-              <a href="#">Фитнес-браслеты</a>
+              <a href="#" class="user-compare">Сравнить</a>
             </li>
             <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
+              <a href="#" class="user-cart">Корзина</a>
             </li>
           </ul>
-        </div>
-        <ul class="nav-main--pages">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        </nav>
+        <nav class="page-nav nav-main">
+          <div class="nav-main-item">
+            <a href="catalog.html" class="nav-main-catalog-link">Каталог товаров</a>
+            <ul class="nav-main--category">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav-main--pages">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-index">
       <section class="slider">
-        <h2 class="slider-title visually-hidden">
-          Рекомендуемы товары
+        <div class="container">
+          <h2 class="visually-hidden">
+            Рекомендуемы товары
+          </h2>
+          <ul class="slider-gallery">
+            <li class="slider-gallery-item">
+              <div class="slider-number">
+                01
+              </div>
+              <div class="slider-inner">
+                <div class="slider-image">
+                  <img src="" alt="Фото первого слайда">
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                </div>
+                <div class="slider-content">
+                  <div class="slider-title">
+                    Порхает как бабочка, жалит как пчела!
+                  </div>
+                  <div class="slider-description">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                  </div>
+                  <a href="#" class="slider-link">Подробнее</a>
+                  <table class="specification">
+                    <tbody>
+                      <tr>
+                        <th>800 м</th>
+                        <th>50 м</th>
+                      </tr>
+                      <tr>
+                        <td>Дальность полета</td>
+                        <td>Радиус поражения</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 Слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 Слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 Слайд</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="category-index">
+        <div class="container">
+          <h2 class="visually-hidden">
+            Категории товаров
+          </h2>
+          <ul class="category-list">
+            <li>
+              <a href="#">
+                <img src="" alt="Виртуальная реальность">
+                Виртуальная реальность
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="Моноподы для селфи">
+                Моноподы для селфи
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="Экшн-камеры">
+                Экшн-камеры
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="Фитнес-браслеты">
+                Фитнес-браслеты
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="Умные часы">
+                Умные часы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="Квадрокоптеры">
+                Квадрокоптеры
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service">
+        <h2 class="visually-hidden">
+          Дополнительыне услуги
         </h2>
-        <ul class="slider-gallery">
-          <li class="slider-gallery-item">
-            <div class="slider-number">
-              01
-            </div>
-            <div class="slider-inner">
-              <div class="slider-image">
-                <img src="" alt="Фото первого слайда">
-                <button class="slider-button slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
-                </button>
-                <button class="slider-button slider-next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
-                </button>
-              </div>
-              <div class="slider-content">
-                <div class="slider-title">
-                  Порхает как бабочка, жалит как пчела!
-                </div>
-                <div class="slider-description">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-                </div>
-                <a href="#" class="slider-link">Подробнее</a>
-                <table class="specification">
-                  <tbody>
-                    <tr>
-                      <th>800 м</th>
-                      <th>50 м</th>
-                    </tr>
-                    <tr>
-                      <td>Дальность полета</td>
-                      <td>Радиус поражения</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+        <ul class="service-list">
+          <li class="service-item service-item--active">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="service-item">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </li>
+          <li class="service-item">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </ul>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 Слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 Слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 Слайд</span>
-            </button>
-          </li>
-        </ol>
       </section>
     </main>
     <footer class="page-footer">
