@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header-logo">
+        <img src="" alt="Логотип магазина Device">
+        <h1 class="visually-hidden">Магазин Device</h1>
+      </div>
+      <nav class="page-nav nav-user">
+        <ul class="nav-user-list">
+          <li>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <input type="search" name="search" placeholder="Текст поиска">
+              <input type="submit" name="submit-search" value="Найти">
+            </form>
+          </li>
+          <li>
+            <a href="#" class="user-login">Войти</a>
+          </li>
+          <li>
+            <a href="#" class="user-logout visually-hidden">Выйти</a>
+          </li>
+          <li>
+            <a href="#" class="user-compare">Сравнить</a>
+          </li>
+          <li>
+            <a href="#" class="user-cart">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="page-nav nav-main">
+        <div class="nav-main-item">
+          <a href="catalog.html" class="nav-main-catalog-link">Каталог товаров</a>
+          <ul class="nav-main--category">
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav-main--pages">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
   </body>
 </html>
