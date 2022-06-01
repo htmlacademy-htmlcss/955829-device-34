@@ -5,45 +5,46 @@
     <title>Девайс - Каталог</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <a class="page-header-logo">
+        <a href="index.html" class="page-header-logo">
           <img src="images/device-logo.svg" width="145" height="36" alt="Логотип магазина Device">
           <h1 class="visually-hidden">Магазин Device</h1>
         </a>
         <nav class="page-nav nav-user">
           <ul class="nav-user-list">
             <li>
-              <form action="https://echo.htmlacademy.ru/" method="get">
+              <form action="https://echo.htmlacademy.ru/" method="get" class="page-search">
                 <input type="search" name="search" placeholder="Текст поиска">
                 <input type="submit" name="submit-search" value="Найти">
               </form>
             </li>
             <li>
-              <a href="#" class="user-login">Войти</a>
+              <a href="#" class="nav-user-button user-login">Войти</a>
             </li>
             <li>
-              <a href="#" class="user-logout visually-hidden">Выйти</a>
+              <a href="#" class="nav-user-button user-logout">Выйти</a>
             </li>
             <li>
-              <a href="#" class="user-compare">Сравнить</a>
+              <a href="#" class="nav-user-button user-compare">Сравнить</a>
             </li>
             <li>
-              <a href="#" class="user-cart">Корзина</a>
+              <a href="#" class="nav-user-button user-cart">Корзина</a>
             </li>
           </ul>
         </nav>
         <nav class="page-nav nav-main">
           <div class="nav-main-item">
-            <a href="#" class="nav-main-catalog-link">Каталог товаров</a>
+            <a href="#" class="page-element nav-main-catalog-link">Каталог товаров</a>
             <ul class="nav-main--category">
               <li>
                 <a href="#">Виртуальная реальность</a>
               </li>
               <li>
-                <a href="#">Моноподы для селфи</a>
+                <a>Моноподы для селфи</a>
               </li>
               <li>
                 <a href="#">Экшн-камеры</a>
@@ -61,22 +62,22 @@
           </div>
           <ul class="nav-main--pages">
             <li>
-              <a href="#">Доставка</a>
+              <a href="#" class="page-element">Доставка</a>
             </li>
             <li>
-              <a href="#">Гарантия</a>
+              <a href="#" class="page-element">Гарантия</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="#" class="page-element">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-catalog">
-      <section class="catalog-content">
+      <section class="catalog-header">
         <div class="container">
-          <h1 class="catalog-title">Моноподы для селфи</h1>
+          <h1 class="page-title catalog-title">Моноподы для селфи</h1>
           <ol class="breadcrumbs">
             <li>
               <a href="index.html">Главная</a>
@@ -88,9 +89,13 @@
               <a>Моноподы для селфи</a>
             </li>
           </ol>
+        </div>
+      </section>
+      <section class="catalog-body">
+        <div class="container">
           <div class="catalog-inner">
             <aside class="side-filter">
-              <h2>Фильтр:</h2>
+              <h2 class="page-element">Фильтр:</h2>
               <form action="https://echo.htmlacademy.ru/" method="get" class="form-filter">
                 <div class="widget">
                   <span class="widget-title">Стоимость</span>
@@ -142,12 +147,13 @@
                     </li>
                   </ul>
                 </div>
-                <button type="submit" name="filter-show" class="button">Показать</button>
+                <button type="submit" name="filter-show" class="page-element button">Показать</button>
               </form>
             </aside>
-            <div class="content">
+            <section class="catalog-content">
+              <h2 class="visually-hidden">Список товаров</h2>
               <div class="sort">
-                <h2>Сортировка:</h2>
+                <div class="page-element sort-title">Сортировка:</div>
                 <div class="sort-by">
                   <form action="https://echo.htmlacademy.ru/" method="get" class="sort-filter">
                     <select name="sort-by" id="sort-by" class="sort-by">
@@ -218,11 +224,11 @@
                     </a>
                   </li>
                 </ul>
+                <button type="button" class="product-load-more page-element">Загрузить еще</button>
               </div>
-              <button type="button" class="product-load-more">Загрузить еще</button>
               <div class="pagination">
-                <a href="#" class="pagination-direction pagination-back">Назад</a>
-                <ul>
+                <a href="#" class="page-element pagination-direction pagination-back">Назад</a>
+                <ul class="pagination-list">
                   <li>
                     <a href="#" class="current">1</a>
                   </li>
@@ -237,9 +243,9 @@
                     <a href="#">15</a>
                   </li>
                 </ul>
-                <a href="#" class="pagination-direction pagination-forward">Вперёд</a>
+                <a href="#" class="page-element pagination-direction pagination-forward">Вперёд</a>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </section>
@@ -251,25 +257,23 @@
         </div>
         <div class="footer-box">
           <address class="footer-adress">
-            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
           <ul class="footer-nav">
             <li>
-              <a href="#">Доставка</a>
+              <a href="#" class="page-element">Доставка</a>
             </li>
             <li>
-              <a href="#">Гарантия</a>
+              <a href="#" class="page-element">Гарантия</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="#" class="page-element">Контакты</a>
             </li>
           </ul>
           <a href="tel:+78128121212" class="footer-phone">+7(812)812-12-12</a>
         </div>
         <div class="footer-box">
-          <div class="footer-line">
-            <img src="images/divider.svg" alt="Разделительная линия">
-          </div>
+          <div class="footer-line"></div>
           <ul class="footer-social">
             <li>
               <a href="https://t.me/htmlacademy" aria-label="Telegram" class="social-telegram"></a>

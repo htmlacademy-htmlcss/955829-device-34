@@ -1,0 +1,408 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+body,
+input {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+}
+
+p {
+  margin: 0;
+  line-height: 30px;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-search input {
+  font-size: 16px;
+}
+
+.page-title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.page-element {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+.page-header .container {
+  background-color: #FFE17F;
+}
+
+.nav-user-button  {
+  line-height: 30px;
+}
+
+.nav-main--category a {
+  line-height: 18px;
+}
+
+/* Home Slider*/
+
+.slider-description {
+  line-height: 30px;
+  color: #444444;
+}
+
+.slider-number {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 120px;
+  color: #FFFFFF;
+  background-color: #FFE17F;
+}
+
+table.specification th {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+table.specification td {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* Home Category */
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.category-list li {
+  width: 160px;
+  list-style: none;
+}
+
+.category-list a {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.icon-cat-box {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.icon-vr {
+  background-image: url(../images/icon-cat-vr.svg);
+}
+
+.icon-selfie {
+  background-image: url(../images/icon-cat-selfie.svg);
+}
+
+.icon-action-camera {
+  background-image: url(../images/icon-cat-action-camera.svg);
+}
+
+.icon-fit-tracker {
+  background-image: url(../images/icon-cat-fit-tracker.svg);
+}
+
+.icon-smart-watch {
+  background-image: url(../images/icon-cat-smart-watch.svg);
+}
+
+.icon-drone {
+  background-image: url(../images/icon-cat-drone.svg);
+}
+
+/* Home Service */
+
+.service {
+  background-color: #F0F0F0;
+}
+
+.tabs-box {
+  min-height: 289px;
+}
+
+.tabs-slide {
+  border-left: 7px solid #000;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.tabs-delivery {
+  background-image: url(../images/icon-service-delivery.png);
+  background-size: 136px 164px;
+}
+
+.tabs-guarantie {
+  background-image: url(../images/icon-service-guarantie.png);
+  background-size: 171px 195px;
+}
+
+.tabs-credit {
+  background-image: url(../images/icon-service-credit.png);
+  background-size: 156px 189px;
+}
+
+/* Home Exclusive */
+
+.exclusive a {
+  display: block;
+  background-color: #F0F0F0;
+}
+
+.exclusive h2 {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Home Company Info */
+
+.about-us-items a {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Home Subscribe */
+
+.subscribe {
+  background-color: #F0F0F0;
+}
+
+.subscribe-form input[type="email"] {
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
+
+/* Page Breadcrumbs */
+
+.breadcrumbs a {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Catalog Content*/
+
+.catalog-body {
+  background-color: #f0f0f0;
+}
+
+.side-filter h2 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.widget-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.toggle {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.filter-option label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-content {
+  background-color: #fff;
+}
+
+.sort {
+  background-color: #f0f0f0;
+}
+
+.sort-title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sort-by,
+.sort-by option {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+
+.product-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.product-price {
+  line-height: 21px;
+  color: #444444;
+}
+
+.product-load-more {
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination {
+  background-color: #F0F0F0;
+}
+
+.pagination-list a {
+  font-size: 16px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.footer-adress p {
+  line-height: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-phone {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.footer-social a {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.social-telegram {
+  background-image: url(../images/icon-telegram.svg);
+  width: 14px;
+  height: 12px;
+}
+
+.social-youtube {
+  background-image: url(../images/icon-youtube.svg);
+  width: 16px;
+  height: 11px;
+}
+
+.social-twitter {
+  background-image: url(../images/icon-twitter.svg);
+  width: 16px;
+  height: 14px;
+}
