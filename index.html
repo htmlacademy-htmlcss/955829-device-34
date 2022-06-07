@@ -5,6 +5,7 @@
     <title>Девайс - Главная</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page-body">
@@ -37,40 +38,48 @@
           </ul>
         </nav>
         <nav class="page-nav nav-main">
-          <div class="nav-main-item">
+          <div class="nav-main-item nav-main-left">
             <a href="#" class="page-element nav-main-catalog-link">Каталог товаров</a>
-            <ul class="nav-main--category">
+            <div class="nav-main--hide-menu">
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-main-item">
+            <ul class="nav-main--pages">
               <li>
-                <a href="#">Виртуальная реальность</a>
+                <a href="#" class="page-element">Доставка</a>
               </li>
               <li>
-                <a href="catalog.html">Моноподы для селфи</a>
+                <a href="#" class="page-element">Гарантия</a>
               </li>
               <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
+                <a href="#" class="page-element">Контакты</a>
               </li>
             </ul>
           </div>
-          <ul class="nav-main--pages">
-            <li>
-              <a href="#" class="page-element">Доставка</a>
-            </li>
-            <li>
-              <a href="#" class="page-element">Гарантия</a>
-            </li>
-            <li>
-              <a href="#" class="page-element">Контакты</a>
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
@@ -102,7 +111,9 @@
                   <div class="slider-description">
                     Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                   </div>
-                  <a href="#" class="button slider-link">Подробнее</a>
+                  <div class="slider-link">
+                    <a href="#" class="button page-element">Подробнее</a>
+                  </div>
                   <table class="specification">
                     <tbody>
                       <tr>
@@ -118,7 +129,7 @@
                 </div>
               </div>
             </li>
-            <li class="slider-gallery-item">
+            <li class="slider-gallery-item visually-hidden">
               <div class="slider-number">
                 02
               </div>
@@ -134,12 +145,14 @@
                 </div>
                 <div class="slider-content">
                   <div class="page-title slider-title">
-                    Худеем правильно!
+                    Худеем<br>правильно!
                   </div>
                   <div class="slider-description">
                     Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                   </div>
-                  <a href="#" class="button page-element slider-link">Подробнее</a>
+                  <div class="slider-link">
+                    <a href="#" class="button page-element">Подробнее</a>
+                  </div>
                   <table class="specification">
                     <tbody>
                       <tr>
@@ -153,7 +166,7 @@
                 </div>
               </div>
             </li>
-            <li class="slider-gallery-item">
+            <li class="slider-gallery-item visually-hidden">
               <div class="slider-number">
                 03
               </div>
@@ -169,12 +182,14 @@
                 </div>
                 <div class="slider-content">
                   <div class="page-title slider-title">
-                    Делай селфи, как Бен Стиллер!
+                    Делай селфи,<br>как Бен Стиллер!
                   </div>
                   <div class="slider-description">
                     Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                   </div>
-                  <a href="#" class="button page-element slider-link">Подробнее</a>
+                  <div class="slider-link">
+                    <a href="#" class="button page-element">Подробнее</a>
+                  </div>
                   <table class="specification">
                     <tbody>
                       <tr>
@@ -195,7 +210,7 @@
           </ul>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button slider-pagination-current" type="button">
                 <span class="visually-hidden">1 Слайд</span>
               </button>
             </li>
@@ -265,21 +280,21 @@
           <div class="tabs">
             <div class="tabs-service">
               <div class="tabs-box">
-                <input name="service" type="radio" class="visually-hidden tabs-item" id="service1" value="service" checked><label class="page-element tabs-label" for="service1" tabindex="0">Доставка</label>
+                <input name="service" type="radio" class="visually-hidden tabs-item" id="service1" value="service" checked><label class="button page-element tabs-label" for="service1" tabindex="0">Доставка</label>
                 <div class="tabs-slide tabs-delivery">
                   <h3 class="page-title">Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
               </div>
               <div class="tabs-box">
-                <input name="service" type="radio" class="visually-hidden tabs-item" id="service2" value="service"><label class="page-element tabs-label" for="service2" tabindex="0">Гарантия</label>
+                <input name="service" type="radio" class="visually-hidden tabs-item" id="service2" value="service"><label class="button page-element tabs-label" for="service2" tabindex="0">Гарантия</label>
                 <div class="tabs-slide tabs-guarantie">
                   <h3 class="page-title">Гарантия</h3>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                 </div>
               </div>
               <div class="tabs-box">
-                <input name="service" type="radio" class="visually-hidden tabs-item" id="service3" value="service"><label class="page-element tabs-label" for="service3" tabindex="0">Кредит</label>
+                <input name="service" type="radio" class="visually-hidden tabs-item" id="service3" value="service"><label class="button page-element tabs-label" for="service3" tabindex="0">Кредит</label>
                 <div class="tabs-slide tabs-credit">
                   <h3 class="page-title">Кредит</h3>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -338,8 +353,8 @@
       <section class="subscribe">
         <div class="container">
           <div class="subscribe-top">
-            <h2 class="page-title">Подпишитесь на рассылку</h2>
-            <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <h2 class="page-title">Подпишитесь<br>на рассылку</h2>
+            <p>Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscribe-bottom">
             <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
@@ -376,7 +391,9 @@
           <a href="tel:+78128121212" class="footer-phone">+7(812)812-12-12</a>
         </div>
         <div class="footer-box">
-          <div class="footer-line"></div>
+          <div class="footer-line">
+            <div class="footer-line-content"></div>
+          </div>
           <ul class="footer-social">
             <li>
               <a href="https://t.me/htmlacademy" aria-label="Telegram" class="social-telegram"></a>
@@ -388,7 +405,7 @@
               <a href="https://twitter.com/htmlacademy_ru" aria-label="Twitter" class="social-twitter"></a>
             </li>
           </ul>
-          <a href="https://htmlacademy.ru/" title="Разработано htmlacademy.ru">
+          <a class="footer-logo-creator" href="https://htmlacademy.ru/" title="Разработано htmlacademy.ru">
             <img src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy">
           </a>
         </div>

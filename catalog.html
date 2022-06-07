@@ -5,12 +5,13 @@
     <title>Девайс - Каталог</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <a href="index.html" class="page-header-logo">
+        <a class="page-header-logo">
           <img src="images/device-logo.svg" width="145" height="36" alt="Логотип магазина Device">
           <h1 class="visually-hidden">Магазин Device</h1>
         </a>
@@ -37,42 +38,51 @@
           </ul>
         </nav>
         <nav class="page-nav nav-main">
-          <div class="nav-main-item">
+          <div class="nav-main-item nav-main-left">
             <a href="#" class="page-element nav-main-catalog-link">Каталог товаров</a>
-            <ul class="nav-main--category">
+            <div class="nav-main--hide-menu">
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="hide-menu-box">
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-main-item">
+            <ul class="nav-main--pages">
               <li>
-                <a href="#">Виртуальная реальность</a>
+                <a href="#" class="page-element">Доставка</a>
               </li>
               <li>
-                <a>Моноподы для селфи</a>
+                <a href="#" class="page-element">Гарантия</a>
               </li>
               <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
+                <a href="#" class="page-element">Контакты</a>
               </li>
             </ul>
           </div>
-          <ul class="nav-main--pages">
-            <li>
-              <a href="#" class="page-element">Доставка</a>
-            </li>
-            <li>
-              <a href="#" class="page-element">Гарантия</a>
-            </li>
-            <li>
-              <a href="#" class="page-element">Контакты</a>
-            </li>
-          </ul>
         </nav>
       </div>
+    </header>
     </header>
     <main class="main-catalog">
       <section class="catalog-header">
@@ -98,7 +108,7 @@
               <h2 class="page-element">Фильтр:</h2>
               <form action="https://echo.htmlacademy.ru/" method="get" class="form-filter">
                 <div class="widget">
-                  <span class="widget-title">Стоимость</span>
+                  <div class="widget-title">Стоимость</div>
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale">
@@ -110,7 +120,7 @@
                   </div>
                 </div>
                 <div class="widget">
-                  <span class="widget-title">Цвет</span>
+                  <div class="widget-title">Цвет</div>
                   <ul>
                     <li class="filter-option filter-checkbox">
                       <input type="checkbox" name="black" id="color-black" class="visually-hidden filter-input-checkbox filter-input" checked>
@@ -135,7 +145,7 @@
                   </ul>
                 </div>
                 <div class="widget">
-                  <span class="widget-title">Bluetooth</span>
+                  <div class="widget-title">Bluetooth</div>
                   <ul>
                     <li class="filter-option filter-radio">
                       <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" class="visually-hidden filter-input-radio filter-input" checked>
@@ -147,7 +157,7 @@
                     </li>
                   </ul>
                 </div>
-                <button type="submit" name="filter-show" class="page-element button">Показать</button>
+                <button type="submit" name="filter-show" class="button page-element filter-button">Показать</button>
               </form>
             </aside>
             <section class="catalog-content">
@@ -160,13 +170,13 @@
                       <option value="popular">Популярные</option>
                       <option value="price">По цене</option>
                     </select>
-                    <div class="sort-direction">
-                      <input type="radio" name="sort-direction" value="up" id="sort-up" class="visually-hidden" checked>
-                      <label class="direction" for="sort-up" tabindex="0" aria-label="По возрастанию"></label>
-                      <input type="radio" name="sort-direction" value="down" id="sort-down" class="visually-hidden">
-                      <label class="direction" for="sort-down" tabindex="0" aria-label="По убыванию"></label>
-                    </div>
                   </form>
+                </div>
+                <div class="sort-direction">
+                  <input type="radio" name="sort-direction" value="up" id="sort-up" class="visually-hidden" checked>
+                  <label class="direction sort-up" for="sort-up" tabindex="0" aria-label="По возрастанию"></label>
+                  <input type="radio" name="sort-direction" value="down" id="sort-down" class="visually-hidden">
+                  <label class="direction sort-down" for="sort-down" tabindex="0" aria-label="По убыванию"></label>
                 </div>
               </div>
               <div class="catalog-products">
@@ -225,25 +235,25 @@
                   </li>
                 </ul>
                 <button type="button" class="product-load-more page-element">Загрузить еще</button>
-              </div>
-              <div class="pagination">
-                <a href="#" class="page-element pagination-direction pagination-back">Назад</a>
-                <ul class="pagination-list">
-                  <li>
-                    <a href="#" class="current">1</a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>...</li>
-                  <li>
-                    <a href="#">15</a>
-                  </li>
-                </ul>
-                <a href="#" class="page-element pagination-direction pagination-forward">Вперёд</a>
+                <div class="pagination">
+                  <a href="#" class="page-element pagination-direction pagination-back">Назад</a>
+                  <ul class="pagination-list">
+                    <li>
+                      <a href="#" class="current">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>...</li>
+                    <li>
+                      <a href="#">15</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="page-element pagination-direction pagination-forward">Вперёд</a>
+                </div>
               </div>
             </section>
           </div>
@@ -273,7 +283,9 @@
           <a href="tel:+78128121212" class="footer-phone">+7(812)812-12-12</a>
         </div>
         <div class="footer-box">
-          <div class="footer-line"></div>
+          <div class="footer-line">
+            <div class="footer-line-content"></div>
+          </div>
           <ul class="footer-social">
             <li>
               <a href="https://t.me/htmlacademy" aria-label="Telegram" class="social-telegram"></a>
@@ -285,7 +297,7 @@
               <a href="https://twitter.com/htmlacademy_ru" aria-label="Twitter" class="social-twitter"></a>
             </li>
           </ul>
-          <a href="https://htmlacademy.ru/" title="Разработано htmlacademy.ru">
+          <a class="footer-logo-creator" href="https://htmlacademy.ru/" title="Разработано htmlacademy.ru">
             <img src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy">
           </a>
         </div>
